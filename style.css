@@ -1,92 +1,90 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    background-color: #d8f3f8;
+    font-family: "Trebuchet MS", sans-serif;
     margin: 0;
+    padding: 0;
 }
 
-.form-container {
-    width: 650px;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 25px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+#container {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #f9ffff;
+    border: 3px solid #a7d7e8;
+    padding: 20px;
 }
 
-.form-title {
-    color: #2e7d32;
+#mainHeader {
     text-align: center;
-    margin-bottom: 25px;
-    font-size: 24px;
+    background-color: #b7e3ec;
+    padding: 15px;
+    border-bottom: 2px solid #84c7d0;
 }
 
-.form-row {
-    display: flex;
-    align-items: center;
-    padding: 12px;
-    background-color: #e8f5e9;
-    border-bottom: 1px solid #c8e6c9;
-}
-
-.form-row:last-of-type {
-    border-bottom: none;
-}
-
-.form-row label {
-    flex: 1;
+#mainHeader h1 {
+    margin: 0;
+    color: #045c64;
     font-weight: bold;
-    color: #444;
 }
 
-.form-row input,
-.form-row input[type="date"],
-.form-row input[type="tel"],
-.form-row input[type="email"],
-.form-row textarea,
-.form-row select {
-    flex: 2;
+.subtitle {
+    color: #4a8e95;
+    font-style: italic;
+}
+
+#sidebar {
+    float: left;
+    width: 22%;
+    background-color: #a3e4d7;
+    border: 2px solid #6ac7b3;
     padding: 10px;
-    border: 1px solid #a5d6a7;
-    border-radius: 5px;
-    font-size: 14px;
+    margin-right: 20px;
 }
 
-.form-row textarea {
-    resize: vertical;
+#sidebar h2 {
+    color: #045c64;
+    border-bottom: 1px solid #4a8e95;
+    font-size: 1.2em;
 }
 
-.radio-options,
-.checkbox-options {
-    flex: 2;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 20px;
+#sidebar ul {
+    list-style-type: square;
+    padding-left: 20px;
 }
 
-.radio-options label,
-.checkbox-options label {
-    flex: initial;
-    font-weight: normal;
+#entries {
+    float: left;
+    width: 70%;
 }
 
-button[type="submit"] {
-    display: block;
-    margin: 30px auto 0;
-    padding: 12px 25px;
-    background-color: #43a047;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
+.entry {
+    background-color: #e6f9fb;
+    border: 2px solid #8ac6d1;
+    padding: 10px;
+    margin-bottom: 20px;
+    overflow: auto;
+}
+
+.entry h3 {
+    color: #045c64;
+    border-bottom: 1px solid #84c7d0;
+}
+
+.entry .date {
+    color: #007a86;
     font-weight: bold;
 }
 
-button[type="submit"]:hover {
-    background-color: #388e3c;
+.entry img {
+    float: right;
+    width: 130px;
+    margin-left: 10px;
+    border-radius: 8px;
+}
+
+footer {
+    clear: both;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    color: #4a8e95;
 }
